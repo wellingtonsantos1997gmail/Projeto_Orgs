@@ -7,13 +7,13 @@
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main"
+        android:id="@+id/activity_formulario_produto_main_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".ui.activity.FormularioProdutoActivity">
 
         <EditText
-            android:id="@+id/activity_formulario_produto_nome"
+            android:id="@+id/activity_formulario_produto_nome_fragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -24,27 +24,27 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/activity_formulario_produto_descricao"
+            android:id="@+id/activity_formulario_produto_descricao_fragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Descrição"
             android:inputType="text"
-            app:layout_constraintEnd_toEndOf="@id/activity_formulario_produto_nome"
-            app:layout_constraintStart_toStartOf="@id/activity_formulario_produto_nome"
-            app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_nome" />
+            app:layout_constraintEnd_toEndOf="@id/activity_formulario_produto_nome_fragment"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_produto_nome_fragment"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_nome_fragment" />
 
         <EditText
-            android:id="@+id/activity_formulario_produto_valor"
+            android:id="@+id/activity_formulario_produto_valor_fragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Valor"
             android:inputType="numberDecimal"
-            app:layout_constraintEnd_toEndOf="@id/activity_formulario_produto_descricao"
-            app:layout_constraintStart_toStartOf="@id/activity_formulario_produto_descricao"
-            app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_descricao" />
+            app:layout_constraintEnd_toEndOf="@id/activity_formulario_produto_descricao_fragment"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_produto_descricao_fragment"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_descricao_fragment" />
 
         <Button
-            android:id="@+id/activity_formulario_produto_botao_salvar"
+            android:id="@+id/activity_formulario_produto_botao_salvar_fragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -52,8 +52,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_valor"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_valor_fragment"
             app:layout_constraintVertical_bias="1"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/formulario_produtos_fragment_container_"
+            android:name="com.wellington.orgs.ui.activity.FormularioProdutoFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
